@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - The Durlav SethS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad618d076d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contactname" onkeyup="validatename()">
+        <span id="nameerror"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contactphone" onkeyup="validatephone()">
+        <span id="phoneerror"></span>
+
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contactemail" onkeyup="validateemail()">
+        <span id="emailerror"></span>
+
+      </div>   
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="contactmessage" onkeyup="validatemessage()"></textarea>
+        <span id="messageerror"></span>
+
+      </div>
+
+    <button onclick="return validateform()">Submit</button>
+    <span id="submiterror"></span>
+
+   
+  </form>
+
+
+  <div class="useful-links">
+    <a href="https://www.instagram.com/thedurlavseth/">Follow in insta</a>
+    <a href="http://www.youtube.com/@thedurlavseth">Visit My youtube channel</a>
+  </div>
+  
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>
